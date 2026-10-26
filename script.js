@@ -143,6 +143,31 @@
 
 // console.log(priceByDishes(239));
 
-let text = "Visit W3Schools!";
-let n = text.match(/W3Schools/);
-document.getElementById("demo").innerHTML = n;
+// let text = "Visit W3Schools!";
+// let n = text.match(/W3Schools/);
+// document.getElementById("demo").innerHTML = n;
+
+// logical operators are often used alongside comparison operators to return the evaluation of expressions instead of merely variables
+
+// const  yi = 0; // y is falsey
+// const zi = null; // z is falsey
+
+// console.log(yi || zi);
+
+
+const x = 0;
+const y = 10;
+const z = 5;
+
+// the first condition is false, the second one is true
+console.log(z < x || z < y);
+console.log(z < x && z < y);
+// both conditions are true
+console.log(z > x || z < y);
+console.log(z > x && z < y);
+// the first condition is true, the second cone is false
+console.log(z > x || z > y);
+console.log(z > x && z > y);
+
+// conclusion: && returns false if even only one of the conditions becomes false, only returns true if BOTH conditions are true
+// || returns the true even if one of the values is false
